@@ -31,8 +31,8 @@ services:
       - .:/app:cached
     networks:
       - katas
-    env_file:
-      - .env
+    environment:
+      - DOCKER_PHP_CONTAINER_NAME
 
 networks:
   katas:
