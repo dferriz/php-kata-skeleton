@@ -33,7 +33,8 @@ rebuild: ## Rebuilds all the stack creating all from zero
 .PHONY: rebuild
 
 dependencies: ## Install all needed dependencies 
-	@docker exec ${DOCKER_PHP_CONTAINER_NAME} composer install
+	@echo "Nothing to do"
+	# @docker exec ${DOCKER_PHP_CONTAINER_NAME} composer install
 .PHONY: dependencies
 
 up: ## Starts development stack
